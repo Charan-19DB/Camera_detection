@@ -1,0 +1,54 @@
+name: face_recognition_app
+description: A Flutter face registration and recognition app using TFLite and Hive.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Camera
+  camera: ^0.10.5+9
+
+  # Face Detection (landmarks for cropping only)
+  google_mlkit_face_detection: ^0.10.0
+
+  # TFLite for real face embeddings (MobileFaceNet)
+  tflite_flutter: ^0.12.1
+
+  # Image decoding + cropping
+  image: ^4.1.7
+
+  # Model download
+  http: ^1.2.0
+
+  # Local Storage
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+
+  # Permissions
+  permission_handler: ^11.3.0
+
+  # Unique IDs
+  uuid: ^4.3.3
+
+  # Path utilities
+  path_provider: ^2.1.2
+
+  # UI
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  hive_generator: ^2.0.1
+  build_runner: ^2.4.8
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/models/
